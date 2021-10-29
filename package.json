@@ -1,0 +1,32 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "@tailwindcss/forms": "^0.2.1",
+        "@tailwindcss/typography": "^0.3.0",
+        "alpinejs": "^2.8.2",
+        "axios": "^0.21",
+        "laravel-echo": "^1.11.2",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "pusher-js": "^7.0.3",
+        "sass": "^1.32.5",
+        "sass-loader": "^8.0.2",
+        "tailwindcss": "^2.0.2"
+    },
+    "dependencies": {
+        "@hotwired/turbo": "*",
+        "alpine-magic-helpers": "^1.2.2",
+        "alpine-turbo-drive-adapter": "^1.1.0",
+        "tailwindcss-interaction-variants": "^5.0.0"
+    }
+}

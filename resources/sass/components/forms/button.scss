@@ -1,0 +1,60 @@
+.button {
+
+    @apply flex-shrink-0;
+    @apply py-2;
+    @apply px-4;
+    @apply shadow-sm;
+    @apply rounded-md;
+    @apply border;
+    @apply text-xs;
+    @apply font-semibold;
+    @apply cursor-pointer;
+
+    &.primary {
+        @apply bg-primary;
+        @apply text-primary;
+        @apply border-primary;
+
+        &:hover {
+            @apply bg-secondary;
+            @apply text-secondary;
+            @apply border-secondary;
+        }
+    }
+
+    &.secondary {
+        @apply bg-secondary;
+        @apply text-secondary;
+        @apply border-secondary;
+
+        &:hover {
+            @apply bg-primary;
+            @apply text-primary;
+            @apply border-primary;
+        }
+    }
+
+    &.ternary {
+        @apply bg-ternary;
+        @apply text-ternary-opposite-primary;
+        @apply border-ternary;
+
+        &:hover {
+            @apply bg-ternary-hover;
+            @apply text-ternary-opposite-primary;
+            @apply border-ternary-hover;
+        }
+    }
+
+    &.danger {
+        @apply bg-danger;
+        @apply text-ternary-opposite-primary;
+        @apply border-danger;
+
+        &:hover {
+            @apply bg-danger-hover;
+            @apply text-ternary-opposite-primary;
+            @apply border-ternary-hover;
+        }
+    }
+}

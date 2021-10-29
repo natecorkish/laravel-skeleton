@@ -1,0 +1,89 @@
+.primary {
+    @apply bg-primary;
+    @apply text-primary;
+    @apply border-primary;
+
+    &:hover {
+        @apply bg-secondary;
+        @apply text-secondary;
+        @apply border-secondary;
+    }
+}
+
+.secondary {
+    @apply bg-secondary;
+    @apply text-secondary;
+    @apply border-secondary;
+
+    &:hover {
+        @apply bg-primary;
+        @apply text-primary;
+        @apply border-primary;
+    }
+}
+
+.tertiary {
+    @apply bg-tertiary;
+    @apply text-primary;
+    @apply border-primary;
+
+    &:hover {
+        @apply bg-primary;
+        @apply text-primary;
+        @apply border-primary;
+    }
+}
+
+.ternary {
+    @apply bg-ternary;
+    @apply text-ternary-opposite-primary;
+    @apply border-primary;
+
+    &:hover {
+        @apply bg-primary;
+        @apply text-primary;
+        @apply border-primary;
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    @apply h-4;
+    @apply w-4;
+    @apply border;
+
+    //&:checked {
+    //    @apply bg-ternary;
+    //    @apply border-primary;
+    //
+    //    &:hover {
+    //        @apply bg-ternary;
+    //        @apply text-ternary-opposite-primary;
+    //        @apply border-primary;
+    //    }
+    //}
+}
+
+select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+}
+
+input[type="text"],
+select {
+    @apply appearance-none;
+}
+
+.input {
+    @apply outline-none;
+    @apply py-2;
+    @apply px-4;
+    @apply text-sm;
+    @apply border;
+    @apply rounded-md;
+    @apply shadow-sm;
+    @apply block;
+    @apply w-full;
+}
